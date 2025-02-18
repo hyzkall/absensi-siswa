@@ -23,29 +23,4 @@ body {
     max-width: 500px;
     margin: 0 auto;
   }
-/* Styling dasar */
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f8f9fa;
-  }
   
-  button {
-    margin: 10px;
-  }
-  
-  input {
-    margin: 10px 0;
-  }
-  
-  /* Mode Gelap */
-  body.dark-mode {
-    background-color: #121212;
-    color: white;
-  }
-  
-  canvas {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-    

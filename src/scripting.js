@@ -8,7 +8,7 @@ const toggleDarkMode = () => {
   
   // Data Absensi untuk Grafik
   const attendanceData = {
-    labels: ['Hadir', 'Izin', 'Tidak Hadir'],
+    labels: ['Hadir', 'Izin', 'Tidak Hadir'],  // Kategori absensi
     datasets: [{
       label: 'Absensi Siswa',
       data: [75, 15, 10], // Contoh data: 75% hadir, 15% izin, 10% tidak hadir
