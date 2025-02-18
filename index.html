@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head class="text-center">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absensi Siswa</title>
     <link rel="stylesheet" href="styling.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <h1>Absensi Siswa</h1>
-    <button id="absenButton">Absen Sekarang</button>
+
+    <!-- Tombol Mode Gelap -->
+    <button id="darkModeButton" class="btn btn-secondary mt-3">Mode Gelap</button>
+
+    <!-- Input Pencarian Siswa -->
+    <input type="text" id="searchStudent" class="form-control mt-2" placeholder="Cari Siswa">
+
+    <!-- Button untuk Absen -->
+    <button id="absenButton" class="btn btn-primary mt-2">Absen Sekarang</button>
+
+    <!-- Grafik Absensi -->
+    <h3>Statistik Absensi</h3>
+    <canvas id="attendanceChart"></canvas>
 
     <script src="scripting.js"></script>
 </body>
