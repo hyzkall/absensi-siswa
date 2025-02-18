@@ -17,12 +17,14 @@ const toggleDarkMode = () => {
     }]
   };
   
-  // Membuat Grafik Absensi dengan Chart.js
-  const ctx = document.getElementById('attendanceChart').getContext('2d');
-  const attendanceChart = new Chart(ctx, {
-    type: 'pie', // Grafik tipe pie
-    data: attendanceData,
-  });
+  // Pastikan Chart.js dimuat terlebih dahulu, baru jalankan kode ini
+  window.onload = function() {
+    const ctx = document.getElementById('attendanceChart').getContext('2d');
+    const attendanceChart = new Chart(ctx, {
+      type: 'pie', // Grafik tipe pie
+      data: attendanceData,
+    });
+  };
   
   // Pencarian Siswa
   document.getElementById('searchStudent').addEventListener('input', function() {
